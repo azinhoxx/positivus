@@ -15,7 +15,7 @@ defineProps({
 <template>
   <a
     href="#"
-    class="text-[20px] leading-[28px] px-[35px] py-5 border rounded-[14px] border-[#191A23] size-max"
+    class="sm:text-[20px] sm:leading-7 text-[18px] leading-6 px-[35px] sm:py-5 py-4 border rounded-[14px] border-[#191A23] size-max"
     :class="[bgColor, textColor]"
     rel="noopener"
   >

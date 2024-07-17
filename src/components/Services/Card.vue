@@ -17,8 +17,8 @@ defineProps({
 </script>
 
 <template>
-  <article
-    class="grid grid-cols-2 grid-rows-[auto_auto] sm:gap-y-[90px] max-[500px]:gap-y-[27px] justify-between w-[600px] p-[50px] border border-dark rounded-[45px] mx-auto shadow-[0_5px_0_theme(colors.dark)]"
+  <div
+    class="grid grid-cols-2 grid-rows-[auto_auto] sm:gap-y-[90px] max-[500px]:gap-y-[27px] justify-between w-[600px] p-[50px] max-[400px]:p-7 border border-dark rounded-[45px] mx-auto shadow-[0_5px_0_theme(colors.dark)]"
     :class="cardBgColor"
   >
     <Heading
@@ -41,5 +41,5 @@ defineProps({
       :src="imageUrl"
       :alt="imageAlt"
     />
-  </article>
+  </div>
 </template>

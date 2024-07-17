@@ -14,7 +14,7 @@ defineProps({
 
 <template>
   <div
-    class="max-[1060px]:flex-col max-[1060px]:items-center gap-y-[30px] font-grotesk flex gap-x-10 lg:mt-[140px] mt-[60px] lg:mb-20 mb-10 mx-auto xl:px-[100px] px-[50px] max-sm:px-5 max-w-[1440px]"
+    class="max-[1060px]:flex-col max-[1060px]:items-center gap-y-[30px] font-grotesk flex gap-x-10 lg:mt-[140px] mt-[60px] lg:mb-20 mb-10 mx-auto"
   >
     <Heading :content="heading" :additional="additional" />
     <p

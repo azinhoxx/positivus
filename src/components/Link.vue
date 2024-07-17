@@ -38,8 +38,8 @@ defineProps({
       href="#"
       target="_blank"
       rel="noopener"
-      class="font-grotesk text-[20px] leading-[28px] self-center"
-      :class="[textColor, isCircle ? 'max-sm:hidden' : 'max-sm:block']"
+      class="font-grotesk sm:text-xl text-[18px] sm:leading-7 leading-6 self-center"
+      :class="[textColor, isCircle ? 'max-[550px]:hidden' : 'max-[550px]:block']"
       >Learn more</a
     >
   </div>

@@ -1,11 +1,11 @@
 <script setup>
 import Button from './Button.vue';
-
-const screenWidth = document.documentElement.clientWidth;
 </script>
 
 <template>
-  <section class="max-w-[1440px] mx-auto xl:px-[100px] px-[50px] max-sm:px-5 mt-[100px]">
+  <section
+    class="max-w-[1440px] mx-auto xl:px-[100px] px-[50px] max-sm:px-5 lg:mt-[82px] mt-[50px]"
+  >
     <div class="relative min-[1180px]:py-[23.5px]">
       <div
         class="flex bg-grey rounded-[45px] md:p-[60px] p-[50px] max-md:w-full max-[1180px]:w-max mx-auto"
@@ -19,8 +19,14 @@ const screenWidth = document.documentElement.clientWidth;
             business grow and succeed online.
           </p>
           <Button
-            class="max-[1180px]:w-full text-center"
-            :content="screenWidth < 768 ? 'Get your proposal' : 'Get your free proposal'"
+            class="max-[1180px]:w-full text-center max-md:hidden"
+            content="Get your free proposal"
+            bgColor="bg-dark"
+            textColor="text-white"
+          />
+          <Button
+            class="max-[1180px]:w-full text-center md:hidden"
+            content="Get your proposal"
             bgColor="bg-dark"
             textColor="text-white"
           />

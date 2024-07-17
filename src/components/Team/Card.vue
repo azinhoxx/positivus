@@ -9,17 +9,19 @@ defineProps({
 </script>
 
 <template>
-  <article
-    class="font-grotesk flex flex-col border rounded-[45px] py-10 px-[35px] w-[387px] shadow-[0_5px_0_theme(colors.dark)]"
+  <div
+    class="font-grotesk flex flex-col border rounded-[45px] py-10 min-[400px]:px-[35px] px-5 max-w-[387px] shadow-[0_5px_0_theme(colors.dark)]"
   >
     <div class="grid grid-cols-3 justify-between">
-      <img :src="imageUrl" :alt="alt" />
+      <img :src="imageUrl" :alt="alt" class="self-center" />
       <div class="col-start-2 col-end-4 row-start-1 row-end-2 ml-5 self-end">
-        <h4 class="font-medium sm:text-[20px] leading-[25.5px]">{{ name }}</h4>
-        <span class="text-[18px] leading-[23px]">{{ job }}</span>
+        <h4 class="font-medium sm:text-[20px] sm:leading-[25.5px] text-[18px] leading-[23px]">
+          {{ name }}
+        </h4>
+        <span class="sm:text-[18px] sm:leading-[23px] text-[16px] leading-[24px]">{{ job }}</span>
       </div>
       <svg
-        class="col-start-3 col-end-4 row-start-1 row-end-2 justify-self-end"
+        class="max-[390px]:hidden col-start-3 col-end-4 row-start-1 row-end-2 justify-self-end"
         width="34"
         height="34"
         viewBox="0 0 34 34"
@@ -38,7 +40,7 @@ defineProps({
         />
       </svg>
     </div>
-    <hr class="my-7" />
-    <p class="text-[18px] leading-[23px]" v-html="aboutFirst"></p>
-  </article>
+    <hr class="min-[400px]:my-7 my-3" />
+    <p class="sm:text-[18px] sm:leading-[23px] text-[16px] leading-6" v-html="aboutFirst"></p>
+  </div>
 </template>

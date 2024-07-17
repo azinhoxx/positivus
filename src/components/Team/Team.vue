@@ -18,24 +18,22 @@ onMounted(async () => {
 </script>
 
 <template>
-  <BlockTitle
-    heading="Team"
-    description="Meet the skilled and experienced team behind our successful digital marketing strategies"
-    width="max-w-[473px]"
-  />
-  <section
-    class="grid grid-cols-3 max-[1368px]:grid-cols-2 max-[948px]:grid-cols-1 gap-10 max-w-[1440px] xl:px-[100px] px-[50px] max-sm:px-5 mx-auto"
-  >
-    <Card
-      v-for="(item, index) in cardInfo"
-      :key="index"
-      :="{
-        ...item
-      }"
-      :class="[
-        index % 2 === 0 ? 'min-[427px]:justify-self-end' : 'min-[427px]:justify-self-start',
-        index in [0, 1] ? 'max-[948px]:hidden' : 'block'
-      ]"
+  <section class="max-w-[1440px] xl:px-[100px] px-[50px] max-sm:px-5 mx-auto">
+    <BlockTitle
+      heading="Team"
+      description="Meet the skilled and experienced team behind our successful digital marketing strategies"
+      width="max-w-[473px]"
     />
+    <div class="grid grid-cols-3 max-[1368px]:grid-cols-2 max-[948px]:grid-cols-1 gap-10">
+      <Card
+        class="justify-self-center"
+        v-for="(item, index) in cardInfo"
+        :key="index"
+        :="{
+          ...item
+        }"
+        :class="[[1, 2].includes(index) ? 'max-[948px]:hidden' : 'block']"
+      />
+    </div>
   </section>
 </template>
