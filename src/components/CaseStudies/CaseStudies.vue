@@ -4,7 +4,10 @@ import Card from './Card.vue';
 </script>
 
 <template>
-  <section class="max-w-[1440px] mx-auto xl:px-[103px] px-[50px] max-sm:px-5">
+  <section
+    id="cases"
+    class="flex flex-col max-w-[1440px] mx-auto xl:px-[103px] px-[50px] max-sm:px-5"
+  >
     <BlockTitle
       heading="Case Studies"
       description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"

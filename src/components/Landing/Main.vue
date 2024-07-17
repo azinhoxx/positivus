@@ -4,6 +4,7 @@ import Button from '../Button.vue';
 
 <template>
   <section
+    id="about"
     class="flex max-xlg:flex-col justify-between max-w-[1440px] mx-auto xl:px-[100px] px-[50px] max-sm:px-5 sm:my-[70px] mt-10 mb-[60px] max-xlg:items-center"
   >
     <div class="font-grotesk flex flex-col xlg:gap-y-[35px] max-w-[531px]">

@@ -18,7 +18,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section class="max-w-[1440px] xl:px-[100px] px-[50px] max-sm:px-5 mx-auto">
+  <section class="flex flex-col max-w-[1440px] xl:px-[100px] px-[50px] max-sm:px-5 mx-auto pb-10">
     <BlockTitle
       heading="Team"
       description="Meet the skilled and experienced team behind our successful digital marketing strategies"

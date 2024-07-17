@@ -14,12 +14,10 @@ onMounted(async () => {
     console.log(err);
   }
 });
-
-const screenWidth = document.documentElement.clientWidth;
 </script>
 
 <template>
-  <section class="max-w-[1440px] xl:px-[103px] px-[50px] max-sm:px-5 mx-auto">
+  <section class="flex flex-col max-w-[1440px] xl:px-[103px] px-[50px] max-sm:px-5 mx-auto">
     <BlockTitle
       class="max-md:hidden"
       heading="Our Working Process"

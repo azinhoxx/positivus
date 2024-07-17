@@ -1,5 +1,5 @@
 <script setup>
-import Button from './Button.vue';
+import Menu from '../Menu.vue';
 </script>
 
 <template>
@@ -62,14 +62,7 @@ import Button from './Button.vue';
         </defs>
       </svg>
     </a>
-    <nav class="font-grotesk flex items-center text-[20px] leading-[28px] gap-x-10 max-xl:hidden">
-      <a href="#" rel="noopener">About us</a>
-      <a href="#" rel="noopener">Services</a>
-      <a href="#" rel="noopener">Use Cases</a>
-      <a href="#" rel="noopener">Pricing</a>
-      <a href="#" rel="noopener">Blog</a>
-      <Button text="Request a quote" />
-    </nav>
+    <Menu />
     <svg
       class="xl:hidden cursor-pointer"
       width="26"
